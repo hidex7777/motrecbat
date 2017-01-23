@@ -79,7 +79,7 @@ function startRec{
 #====main procedure====
 #次回放送日時を取得する
 $next_casting = getNextCast
-#$next_casting = (get-date -Hour 23 -Minute 31 -Second 0)
+#$next_casting = (get-date -Hour 23 -Minute 39 -Second 0)
 $destfile = $destdir + "$ichigoichie　" + $next_casting.AddSeconds(30).ToString("yyyyMMdd-HHmm") + ".mp3"
 #次回放送日時まで待機する
 $sleep_seconds = getSleepSecond $next_casting
